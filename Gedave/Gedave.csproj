@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34E3E130-E726-4028-9D72-2710DC4B2E40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gedave</RootNamespace>
+    <AssemblyName>Gedave</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>41.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcessoDados.cs" />
+    <Compile Include="BuscaCep.cs" />
+    <Compile Include="dsComboBox.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsComboBox.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRelatorios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRelatorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoad.designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFornecedor.Designer.cs">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncionario.Designer.cs">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalizaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalizaCliente.Designer.cs">
+      <DependentUpon>frmLocalizaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParamPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParamPedido.Designer.cs">
+      <DependentUpon>frmParamPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidos2.Designer.cs">
+      <DependentUpon>frmPedidos2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorio.Designer.cs">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolicitaQtdePreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolicitaQtdePreco.Designer.cs">
+      <DependentUpon>frmSolicitaQtdePreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransportadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransportadora.Designer.cs">
+      <DependentUpon>frmTransportadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeuComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MeuComboBox.Designer.cs">
+      <DependentUpon>MeuComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeuMskTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MeuMskTextBox.Designer.cs">
+      <DependentUpon>MeuMskTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeuTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MeuTextBox.Designer.cs">
+      <DependentUpon>MeuTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFornecedor.resx">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncionario.resx">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalizaCliente.resx">
+      <DependentUpon>frmLocalizaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParamPedido.resx">
+      <DependentUpon>frmParamPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidos2.resx">
+      <DependentUpon>frmPedidos2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutos.resx">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorio.resx">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobre.resx">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolicitaQtdePreco.resx">
+      <DependentUpon>frmSolicitaQtdePreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransportadora.resx">
+      <DependentUpon>frmTransportadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\IdadeFuncionario.rdlc" />
+    <EmbeddedResource Include="Relatorios\ProdutosPorCategoria.rdlc" />
+    <EmbeddedResource Include="Relatorios\RptCliente.rdlc" />
+    <EmbeddedResource Include="Relatorios\rptCliente2.rdlc" />
+    <EmbeddedResource Include="Relatorios\rptPedidoFornecedorAno.rdlc" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="dsComboBox.xsc">
+      <DependentUpon>dsComboBox.xsd</DependentUpon>
+    </None>
+    <None Include="dsComboBox.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsComboBox.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsComboBox.xss">
+      <DependentUpon>dsComboBox.xsd</DependentUpon>
+    </None>
+    <None Include="dsRelatorios.xsc">
+      <DependentUpon>dsRelatorios.xsd</DependentUpon>
+    </None>
+    <None Include="dsRelatorios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRelatorios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsRelatorios.xss">
+      <DependentUpon>dsRelatorios.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.png" />
+    <None Include="Resources\Sem título1.jpg" />
+    <None Include="Resources\Sem título.jpg" />
+    <None Include="Resources\fundo-de-Tela-01-1024x768.jpg" />
+    <None Include="Resources\Tag.png" />
+    <None Include="Resources\Interrog.png" />
+    <None Include="Resources\caixa_48x48.JPG" />
+    <None Include="Resources\Green-Cart-128.png" />
+    <None Include="Resources\bits.jpg" />
+    <None Include="Resources\editor_0308_replace.png" />
+    <None Include="Resources\1999_128x128.png" />
+    <None Include="Resources\Trash.png" />
+    <None Include="Resources\Bin-closed-128.png" />
+    <None Include="Resources\8437_128x128.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\novo.png" />
+    <None Include="Resources\278_128x128.png" />
+    <None Include="Resources\logout-icon.png" />
+    <None Include="Resources\7812_64x64.png" />
+    <None Include="Resources\1743_128x128.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\Spanner.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Screw-Driver.png" />
+    <None Include="Resources\Printer.png" />
+    <None Include="Resources\Notepad.png" />
+    <None Include="Resources\Key.png" />
+    <None Include="Resources\ID.png" />
+    <None Include="Resources\Carton.png" />
+    <None Include="Resources\Tools.png" />
+    <None Include="Resources\Informatio2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{73E42DA5-E244-4B23-A26F-FF484EB453EA}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="41.ico" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\relatoriopreview.png" />
+    <None Include="Resources\FundoAplicativo.jpg" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\7689_64x64.png" />
+    <None Include="Resources\prohibit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

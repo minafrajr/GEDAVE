@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gedave.AcessoDados" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAwAAACAACAAAAAAAAAACAAA=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosClientes" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAgAQEAAAEAgIAgwCAAGAAAAAgAAAAAAACEAA=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosCategoria" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAwAAACAgGAAAAgAAAAACAAA=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosFornecedor" Collapsed="true">
+    <Position X="8.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAgAQAAAAEAABAAwCAACAAKAAgAAAAAAACEAA=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosFuncionarios" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CAEAAgAAAAQABAAEEAAAQwCAYCIACAAhAAAAQAEDEgA=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosProdutos" Collapsed="true">
+    <Position X="14.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QgAQAAAAAAAABAAAAAAAAwAACCEgiAAAAAAAAAACABg=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosPedidos" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAEAAEAACABABAAAAAIgQwAQACAAQABSAACAAACCAAA=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosDetalhesPedidos" Collapsed="true">
+    <Position X="11.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAABBBAAAAAAAAwAAACAAAAAAAAQQAAACAgg=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gedave.AcessoDadosTransportadora" Collapsed="true">
+    <Position X="13.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>CAAIAAAAAAQAAgIEAAgIAwCAASAACAAAAAAAAAADAAA=</HashCode>
+      <FileName>AcessoDados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
