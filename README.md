@@ -6,6 +6,6 @@ GEDAVE
 Possui dois projetos: um código gráfico e outro de persistência.</p>
 
 <h3> Links</h3>
-<p><a href>www.pucminas.br</a></p>
+<p><a href=http://www.pucminas.br>www.pucminas.br</a></p>
 
-<p><a href> http://www.micbh.com.br/Paginas/default.aspx</p>
+<p><a href=http://www.micbh.com.br/Paginas/default.aspx> http://www.micbh.com.br/Paginas/default.aspx</p>
